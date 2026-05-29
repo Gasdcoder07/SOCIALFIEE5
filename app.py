@@ -45,7 +45,7 @@ def index():
 @app.route('/post', methods=['POST'])
 def post():
 
-    username = request.form['user']
+    username = request.form['username']
     message = request.form['message']
 
     conn = sqlite3.connect(DATABASE)
