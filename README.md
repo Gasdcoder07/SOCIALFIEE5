@@ -1,7 +1,21 @@
-Error 1 - Manuel Isahit - app.py: linea 73 init__db()
+*PASOS PARA EL FUNCIONAMIENTO DE LA APLICACIÓN*
 
-Error 2 - Valentin Vaca - app.py: linea 36 query
+- Clonar el repositorio
+> git clone https://github.com/Gasdcoder07/SOCIALFIEE5.git
 
-Error 3 - Axl Diaz - app.py: linea 48 user ?
+- Entrar a la carpeta
+> cd SOCIALFIEE5
 
-Error 4 - Greco Serna - 
+- Crear entorno virtual de python
+> python3 -m venv .venv // macOS | Linux
+> python -m venv .venv // Windows
+
+- Activar entorno virtual
+> source .venv/bin/activate // macOS | Linux
+> venv\Scripts\activate // Windows
+
+- Instalar librerías
+> pip install -r requierements.txt
+
+- Correr el programa
+> python app.py
