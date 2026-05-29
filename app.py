@@ -46,7 +46,16 @@ def index():
 def post():
 
     username = request.form['username']
+
     message = request.form['message']
+
+    if not username.strip() or not message.strip():
+        return """
+        <script>
+            alert('El nombre de usuario y el mensaje no pueden estar vacíos.');
+            window.location.href = '/';
+        </script>
+        """
 
     conn = sqlite3.connect(DATABASE)
     cursor = conn.cursor()

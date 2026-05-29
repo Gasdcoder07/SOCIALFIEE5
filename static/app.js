@@ -13,7 +13,7 @@
     function sendMessage(){
 
         var input = document.getElementById('msg');
-
+        
         socket.send(input.value);
 
         input.value = '';
