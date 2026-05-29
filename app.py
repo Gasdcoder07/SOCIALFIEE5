@@ -33,7 +33,7 @@ def index():
     conn = sqlite3.connect(DATABASE)
     cursor = conn.cursor()
 
-    cursor.execute('SELECT username, message FROM posts ORDER posts DESC')
+    cursor.execute('SELECT username, message FROM posts ORDER BY id DESC')
 
     posts = cursor.fetchall()
 
