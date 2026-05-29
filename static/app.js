@@ -13,9 +13,13 @@
     function sendMessage(){
 
         var input = document.getElementById('msg');
-        
-        socket.send(input.value);
 
+        if (input.value.trim() === "")
+            alert("No puede estar vacío")
+        else {
+            socket.send(input.value);
+        }
+        
         input.value = '';
 
     }
