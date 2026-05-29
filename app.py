@@ -70,6 +70,6 @@ def handle_message(msg):
 
 if __name__ == '__main__':
 
-    init__db()
+    init_db()
 
     socketio.run(app, debug=True)
